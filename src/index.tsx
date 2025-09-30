@@ -7,11 +7,9 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
-const routingBase = process.env.NODE_ENV === 'production' ? '/mp2' : '/';
-
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/CS409-MP2">
+    <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/CS409-MP2' : '/'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
