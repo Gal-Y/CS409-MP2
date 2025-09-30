@@ -11,7 +11,7 @@ const routingBase = process.env.NODE_ENV === 'production' ? '/mp2' : '/';
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={routingBase}>
+    <BrowserRouter basename="/CS409-MP2">
       <App />
     </BrowserRouter>
   </React.StrictMode>
