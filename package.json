@@ -2,7 +2,7 @@
   "name": "mp2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<Gal-Y>.github.io/CS409-MP2",
+  "homepage": "https://Gal-Y.github.io/CS409-MP2",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",

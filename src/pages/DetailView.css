@@ -1,0 +1,129 @@
+.detail-view {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: grid;
+  gap: 1.5rem;
+  color: #e5e7eb;
+}
+
+.detail-view__status {
+  padding: 0.9rem 1rem;
+  background: #161f30;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  font-size: 0.95rem;
+}
+
+.detail-view__status--error {
+  background: #7f1d1d;
+  border-color: #991b1b;
+  color: #fee2e2;
+}
+
+.detail-view__hero {
+  display: grid;
+  gap: 1.25rem;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.detail-view__hero img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.detail-view__hero-info {
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-view__hero-info h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f9fafb;
+}
+
+.detail-view__hero-info p {
+  margin: 0;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.detail-view__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.detail-view__grid section {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.detail-view__grid h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f9fafb;
+}
+
+.detail-view__grid ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.35rem;
+  color: #e5e7eb;
+}
+
+.detail-view__grid p {
+  margin: 0;
+  color: #a1accf;
+}
+
+.detail-view__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.detail-view__nav-button {
+  flex: 1;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: #f9fafb;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+}
+
+.detail-view__nav-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.detail-view__back {
+  text-align: center;
+}
+
+.detail-view__back a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .detail-view {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .detail-view__hero img {
+    height: 240px;
+  }
+}
